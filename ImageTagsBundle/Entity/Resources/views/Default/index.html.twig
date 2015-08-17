@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+{% block title %}Login {% endblock %}
+
+{% form_theme form _self %}
+
+{% block field_row %}
+    <div class="field">
+        {{ form_errors(form) }}
+        {{ form_label(form) }}
+        {{ form_widget(form) }}
+    </div>
+{% endblock %}
+
+
+{% block masterheadtitle %}
+Login
+{% endblock %}
+
+{% block body %}
+<form action="{{ path('ull_image_tags_loginpage') }}" method="post" class="form label-inline uniform">
+		<div id="infoMessage">
+			{{ form_errors(form) }}
+		</div>
+	        {{ form_row(form.email) }}
+			{{ form_rest(form) }}
+		<br />
+			<button class="btn">Submit</button>
+</form>
+{% endblock %}	

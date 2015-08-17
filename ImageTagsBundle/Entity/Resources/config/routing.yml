@@ -1,0 +1,22 @@
+    
+ull_image_tags_loginpage:
+    pattern:  /userLogin
+    defaults: { _controller: ULLImageTagsBundle:Default:userLogin }
+
+
+ull_image_tags_taggingpage:
+    pattern:  /tagImage
+    defaults: { _controller: ULLImageTagsBundle:Default:tagImage }
+    
+ull_image_tags_uploadpage:
+    pattern:  /uploadImage
+    defaults: { _controller: ULLImageTagsBundle:Default:uploadImage }
+
+ull_image_tags_search:
+    pattern:  /search
+    defaults: { _controller: ULLImageTagsBundle:Default:search }
+
+ull_image_tags_logout:
+    pattern:  /logout
+    defaults: { _controller: ULLImageTagsBundle:Default:logout }
+    
